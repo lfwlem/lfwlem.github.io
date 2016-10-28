@@ -9,7 +9,7 @@
   </url>
   
   <url>
-    <loc>//litten.me/assets/demo/my_news_reader/js/tagConfig.js</loc>
+    <loc>//litten.me/assets/demo/my_news_reader/js/main.js</loc>
     
     <lastmod>2016-10-21T19:14:50.000Z</lastmod>
     
@@ -17,13 +17,6 @@
   
   <url>
     <loc>//litten.me/assets/demo/hack_demo.html</loc>
-    
-    <lastmod>2016-10-21T19:14:50.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>//litten.me/assets/demo/jiugongge_demo2.html</loc>
     
     <lastmod>2016-10-21T19:14:50.000Z</lastmod>
     
@@ -38,6 +31,13 @@
   
   <url>
     <loc>//litten.me/assets/demo/jiugongge_demo.html</loc>
+    
+    <lastmod>2016-10-21T19:14:50.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>//litten.me/assets/demo/jiugongge_demo2.html</loc>
     
     <lastmod>2016-10-21T19:14:50.000Z</lastmod>
     
@@ -135,7 +135,7 @@
   </url>
   
   <url>
-    <loc>//litten.me/assets/demo/my_news_reader/js/main.js</loc>
+    <loc>//litten.me/assets/demo/my_news_reader/js/tagConfig.js</loc>
     
     <lastmod>2016-10-21T19:14:50.000Z</lastmod>
     
