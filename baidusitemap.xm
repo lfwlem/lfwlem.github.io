@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>//litten.me/2016/11/03/HelloWorld1/</loc>
+    <lastmod>2016-11-03T12:52:35.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2016-11-03T11:42:33.000Z</pubTime>
+        
+        <tag>生活</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//litten.me/2016/10/25/hello-world/</loc>
     <lastmod>2016-10-25T06:46:03.000Z</lastmod>
     <data>
