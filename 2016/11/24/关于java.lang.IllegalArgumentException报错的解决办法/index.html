@@ -6,17 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="//litten.me">
-  <title>lfwlem的博客</title>
+  <title>关于java.lang.IllegalArgumentException报错的解决办法 | lfwlem的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="中山大学南方学院。擅长各项前端技能。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="lfwlem的博客">
-<meta property="og:url" content="//litten.me/index.html">
+  <meta name="description" content="近来做个网站管理系统，后台没法执行，错误如下：
+12345678910111213141516171819202122232425262728293031323334353637383940[2016-11-24 11:05:26] ERROR [main] org.springframework.web.context.ContextLoader.initWebApplicationContex">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于java.lang.IllegalArgumentException报错的解决办法">
+<meta property="og:url" content="//litten.me/2016/11/24/关于java.lang.IllegalArgumentException报错的解决办法/index.html">
 <meta property="og:site_name" content="lfwlem的博客">
-<meta property="og:description" content="中山大学南方学院。擅长各项前端技能。">
+<meta property="og:description" content="近来做个网站管理系统，后台没法执行，错误如下：
+12345678910111213141516171819202122232425262728293031323334353637383940[2016-11-24 11:05:26] ERROR [main] org.springframework.web.context.ContextLoader.initWebApplicationContex">
+<meta property="og:updated_time" content="2016-11-24T11:58:28.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="lfwlem的博客">
-<meta name="twitter:description" content="中山大学南方学院。擅长各项前端技能。">
+<meta name="twitter:title" content="关于java.lang.IllegalArgumentException报错的解决办法">
+<meta name="twitter:description" content="近来做个网站管理系统，后台没法执行，错误如下：
+12345678910111213141516171819202122232425262728293031323334353637383940[2016-11-24 11:05:26] ERROR [main] org.springframework.web.context.ContextLoader.initWebApplicationContex">
   
   
     <link rel="icon" href="/assets/img/favicon.ico">
@@ -134,9 +138,7 @@
 </nav>
 
       <div class="body-wrap">
-        
-  
-    <article id="post-关于org.apache.jasper.servlet.JspServlet serviceJspFile 报错的解决办法" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-关于java.lang.IllegalArgumentException报错的解决办法" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -145,61 +147,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/24/关于org.apache.jasper.servlet.JspServlet serviceJspFile 报错的解决办法/">关于org.apache.jasper.servlet.JspServlet serviceJspFile 报错的解决办法</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>错误如下：</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">org<span class="selector-class">.apache</span><span class="selector-class">.jasper</span><span class="selector-class">.servlet</span><span class="selector-class">.JspServlet</span> serviceJspFile 严重:PWC6117: File <span class="string">"null"</span> not found</div></pre></td></tr></table></figure>
-<hr>
-<p>AdminController.java里所有返回路径最前面那个’/‘去掉．<br>比如 return “/admin/config/list”;<br>修改为　return “admin/config/list”;</p>
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      <a href="/2016/11/24/关于org.apache.jasper.servlet.JspServlet serviceJspFile 报错的解决办法/" class="archive-article-date">
-  	<time datetime="2016-11-24T12:06:40.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-24</time>
-</a>
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/后台-java-Spring/">后台, java, Spring</a></li></ul>
-	</div>
-
-      
-
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-关于java.lang.IllegalArgumentException报错的解决办法" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/24/关于java.lang.IllegalArgumentException报错的解决办法/">关于java.lang.IllegalArgumentException报错的解决办法</a>
+    <h1 class="article-title" itemprop="name">
+      关于java.lang.IllegalArgumentException报错的解决办法
     </h1>
   
 
@@ -232,55 +181,46 @@
   </div>
 </article>
 
-
-
-
-
-
-
-
-
-
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+<nav id="article-nav">
+  
+    <a href="/2016/11/24/关于org.apache.jasper.servlet.JspServlet serviceJspFile 报错的解决办法/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
         
+          关于org.apache.jasper.servlet.JspServlet serviceJspFile 报错的解决办法
+        
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/03/hello-world/">Hello World</a>
-    </h1>
   
+    <a href="/2016/11/03/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>第一篇文章，献给所有的程序员，<strong>Hello World</strong>！</p>
 
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      <a href="/2016/11/03/hello-world/" class="archive-article-date">
-  	<time datetime="2016-11-03T11:42:33.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-03</time>
-</a>
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/生活/">生活</a></li></ul>
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
 	</div>
-
-      
-
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
 
 
 
@@ -288,11 +228,6 @@
 
 
 
-
-
-
-  
-  
 
 
       </div>
@@ -314,8 +249,8 @@
 		fancybox: true,
 		mathjax: false,
 		animate: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
