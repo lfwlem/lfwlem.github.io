@@ -136,6 +136,58 @@
       <div class="body-wrap">
         
   
+    <article id="post-关闭webpack的eslint验证" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/12/01/关闭webpack的eslint验证/">关闭webpack的eslint验证</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <pre><code>在使用vue-cli脚手架构建了webpack项目后，发现eslint的验证太tmd的严谨，实在不适合我这种懒癌症人员使用，所以要把它给关闭掉。
+解决办法：进入webpack.base.conf.js里，屏蔽以下代码：
+</code></pre><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">preLoaders: [</div><div class="line">      &#123;</div><div class="line">        test: /\.vue$/,</div><div class="line">        loader: <span class="string">'eslint'</span>,</div><div class="line">        include: projectRoot,</div><div class="line">        exclude: /node_modules/</div><div class="line">      &#125;,</div><div class="line">      &#123;</div><div class="line">        test: /\.js$/,</div><div class="line">        loader: <span class="string">'eslint'</span>,</div><div class="line">        include: projectRoot,</div><div class="line">        exclude: /node_modules/</div><div class="line">      &#125;</div><div class="line">    ],</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/12/01/关闭webpack的eslint验证/" class="archive-article-date">
+  	<time datetime="2016-12-01T12:31:38.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-12-01</time>
+</a>
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/webpack-vue-eslint/">webpack,vue,eslint</a></li></ul>
+	</div>
+
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
     <article id="post-关于org.apache.jasper.servlet.JspServlet serviceJspFile 报错的解决办法" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -353,7 +405,7 @@
     
     	<section class="tools-section tools-section-tag">
     			<div class="widget tagcloud" id="js-tagcloud">
-    				<a href="/tags/后台-java-Spring/" style="font-size: 20px;">后台, java, Spring</a> <a href="/tags/生活/" style="font-size: 10px;">生活</a>
+    				<a href="/tags/webpack-vue-eslint/" style="font-size: 10px;">webpack,vue,eslint</a> <a href="/tags/后台-java-Spring/" style="font-size: 20px;">后台, java, Spring</a> <a href="/tags/生活/" style="font-size: 10px;">生活</a>
     			</div>
     	</section>
     

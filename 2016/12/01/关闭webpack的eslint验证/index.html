@@ -6,54 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="//litten.me">
-  <title>lfwlem的博客</title>
+  <title>关闭webpack的eslint验证 | lfwlem的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="h3,h4{
-			text-align: center;
-		}
-		#main{
-			width: 350px;
-			height: 100px;
-			border: 1px solid #000;
-			margin: 0 auto;
-		}
-		#main .box{
-			width: 100px;
-			height: 100px;
-			margin-le">
-<meta property="og:type" content="website">
-<meta property="og:title" content="lfwlem的博客">
-<meta property="og:url" content="//litten.me/assets/demo/hack_demo.html">
+  <meta name="description" content="在使用vue-cli脚手架构建了webpack项目后，发现eslint的验证太tmd的严谨，实在不适合我这种懒癌症人员使用，所以要把它给关闭掉。
+解决办法：进入webpack.base.conf.js里，屏蔽以下代码：
+1234567891011121314preLoaders: [      &amp;#123;        test: /\.vue$/,        loader: &apos;eslint">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关闭webpack的eslint验证">
+<meta property="og:url" content="//litten.me/2016/12/01/关闭webpack的eslint验证/index.html">
 <meta property="og:site_name" content="lfwlem的博客">
-<meta property="og:description" content="h3,h4{
-			text-align: center;
-		}
-		#main{
-			width: 350px;
-			height: 100px;
-			border: 1px solid #000;
-			margin: 0 auto;
-		}
-		#main .box{
-			width: 100px;
-			height: 100px;
-			margin-le">
-<meta property="og:updated_time" content="2016-10-21T19:14:50.000Z">
+<meta property="og:description" content="在使用vue-cli脚手架构建了webpack项目后，发现eslint的验证太tmd的严谨，实在不适合我这种懒癌症人员使用，所以要把它给关闭掉。
+解决办法：进入webpack.base.conf.js里，屏蔽以下代码：
+1234567891011121314preLoaders: [      &amp;#123;        test: /\.vue$/,        loader: &apos;eslint">
+<meta property="og:updated_time" content="2016-12-01T12:31:38.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="lfwlem的博客">
-<meta name="twitter:description" content="h3,h4{
-			text-align: center;
-		}
-		#main{
-			width: 350px;
-			height: 100px;
-			border: 1px solid #000;
-			margin: 0 auto;
-		}
-		#main .box{
-			width: 100px;
-			height: 100px;
-			margin-le">
+<meta name="twitter:title" content="关闭webpack的eslint验证">
+<meta name="twitter:description" content="在使用vue-cli脚手架构建了webpack项目后，发现eslint的验证太tmd的严谨，实在不适合我这种懒癌症人员使用，所以要把它给关闭掉。
+解决办法：进入webpack.base.conf.js里，屏蔽以下代码：
+1234567891011121314preLoaders: [      &amp;#123;        test: /\.vue$/,        loader: &apos;eslint">
   
   
     <link rel="icon" href="/assets/img/favicon.ico">
@@ -171,69 +141,41 @@
 </nav>
 
       <div class="body-wrap">
-        <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+        <article id="post-关闭webpack的eslint验证" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      关闭webpack的eslint验证
+    </h1>
+  
+
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-	<title></title>
-	<style type="text/css">
-		h3,h4{
-			text-align: center;
-		}
-		#main{
-			width: 350px;
-			height: 100px;
-			border: 1px solid #000;
-			margin: 0 auto;
-		}
-		#main .box{
-			width: 100px;
-			height: 100px;
-			margin-left: 10px;
-			position: relative;
-			float: left;
-			background: #333;
-			color:#ddd;
-		}
-		#main .task1:hover{
-			z-index: 999;
-		}
-		#main .task2:hover{
-			z-index: 999;
-			background: #999;
-		}
-		#main .task3:hover{
-			z-index: 999;
-			background: #333;
-		}
-	</style>
-</head>
-<body>
-	<h3>三个background为#333的box</h3>
-	<h4>- 请在IE6，IE7中触发hover -</h4>
-	<div id="main">
-		<div class="box task1">box1 - 未设置backgorund</div>
-		<div class="box task2">box2 - background: #999</div>
-		<div class="box task3">box3 - background: #333</div>
-	</div>
-</body>
-</html>
+        <pre><code>在使用vue-cli脚手架构建了webpack项目后，发现eslint的验证太tmd的严谨，实在不适合我这种懒癌症人员使用，所以要把它给关闭掉。
+解决办法：进入webpack.base.conf.js里，屏蔽以下代码：
+</code></pre><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">preLoaders: [</div><div class="line">      &#123;</div><div class="line">        test: /\.vue$/,</div><div class="line">        loader: <span class="string">'eslint'</span>,</div><div class="line">        include: projectRoot,</div><div class="line">        exclude: /node_modules/</div><div class="line">      &#125;,</div><div class="line">      &#123;</div><div class="line">        test: /\.js$/,</div><div class="line">        loader: <span class="string">'eslint'</span>,</div><div class="line">        include: projectRoot,</div><div class="line">        exclude: /node_modules/</div><div class="line">      &#125;</div><div class="line">    ],</div></pre></td></tr></table></figure>
+
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/assets/demo/hack_demo.html" class="archive-article-date">
-  	<time datetime="2016-10-26T01:26:05.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-10-26</time>
+      <a href="/2016/12/01/关闭webpack的eslint验证/" class="archive-article-date">
+  	<time datetime="2016-12-01T12:31:38.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-12-01</time>
 </a>
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/webpack-vue-eslint/">webpack,vue,eslint</a></li></ul>
+	</div>
+
       
 
       <div class="clearfix"></div>
@@ -242,6 +184,16 @@
 </article>
 
   
+<nav id="article-nav">
+  
+  
+    <a href="/2016/11/24/关于org.apache.jasper.servlet.JspServlet serviceJspFile 报错的解决办法/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">关于org.apache.jasper.servlet.JspServlet serviceJspFile 报错的解决办法</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 
 
@@ -291,7 +243,7 @@
 		mathjax: false,
 		animate: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
