@@ -8,22 +8,31 @@
   <link rel="dns-prefetch" href="//litten.me">
   <title>关闭webpack的eslint验证 | lfwlem的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在使用vue-cli脚手架构建了webpack项目后，发现eslint的验证太tmd的严谨，实在不适合我这种懒癌症人员使用，所以要把它给关闭掉。
-解决办法：进入webpack.base.conf.js里，屏蔽以下代码：
-1234567891011121314preLoaders: [      &amp;#123;        test: /\.vue$/,        loader: &apos;eslint">
+  <meta name="description" content="在使用vue-cli脚手架构建了webpack项目后，发现eslint的验证太tmd的严谨，实在不适合我这种懒癌症人员使用，所以必须要把它给关闭掉。  
+解决办法：进入webpack.base.conf.js里，屏蔽以下代码：preLoaders: [
+  {
+    test: /\.vue$/,
+    loader: &amp;apos;eslint&amp;apos;,
+    include: proj">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关闭webpack的eslint验证">
 <meta property="og:url" content="//litten.me/2016/12/01/关闭webpack的eslint验证/index.html">
 <meta property="og:site_name" content="lfwlem的博客">
-<meta property="og:description" content="在使用vue-cli脚手架构建了webpack项目后，发现eslint的验证太tmd的严谨，实在不适合我这种懒癌症人员使用，所以要把它给关闭掉。
-解决办法：进入webpack.base.conf.js里，屏蔽以下代码：
-1234567891011121314preLoaders: [      &amp;#123;        test: /\.vue$/,        loader: &apos;eslint">
-<meta property="og:updated_time" content="2016-12-01T12:31:38.000Z">
+<meta property="og:description" content="在使用vue-cli脚手架构建了webpack项目后，发现eslint的验证太tmd的严谨，实在不适合我这种懒癌症人员使用，所以必须要把它给关闭掉。  
+解决办法：进入webpack.base.conf.js里，屏蔽以下代码：preLoaders: [
+  {
+    test: /\.vue$/,
+    loader: &amp;apos;eslint&amp;apos;,
+    include: proj">
+<meta property="og:updated_time" content="2016-12-02T01:58:22.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关闭webpack的eslint验证">
-<meta name="twitter:description" content="在使用vue-cli脚手架构建了webpack项目后，发现eslint的验证太tmd的严谨，实在不适合我这种懒癌症人员使用，所以要把它给关闭掉。
-解决办法：进入webpack.base.conf.js里，屏蔽以下代码：
-1234567891011121314preLoaders: [      &amp;#123;        test: /\.vue$/,        loader: &apos;eslint">
+<meta name="twitter:description" content="在使用vue-cli脚手架构建了webpack项目后，发现eslint的验证太tmd的严谨，实在不适合我这种懒癌症人员使用，所以必须要把它给关闭掉。  
+解决办法：进入webpack.base.conf.js里，屏蔽以下代码：preLoaders: [
+  {
+    test: /\.vue$/,
+    loader: &amp;apos;eslint&amp;apos;,
+    include: proj">
   
   
     <link rel="icon" href="/assets/img/favicon.ico">
@@ -159,10 +168,22 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <pre><code>在使用vue-cli脚手架构建了webpack项目后，发现eslint的验证太tmd的严谨，实在不适合我这种懒癌症人员使用，所以要把它给关闭掉。
-解决办法：进入webpack.base.conf.js里，屏蔽以下代码：
-</code></pre><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">preLoaders: [</div><div class="line">      &#123;</div><div class="line">        test: /\.vue$/,</div><div class="line">        loader: <span class="string">'eslint'</span>,</div><div class="line">        include: projectRoot,</div><div class="line">        exclude: /node_modules/</div><div class="line">      &#125;,</div><div class="line">      &#123;</div><div class="line">        test: /\.js$/,</div><div class="line">        loader: <span class="string">'eslint'</span>,</div><div class="line">        include: projectRoot,</div><div class="line">        exclude: /node_modules/</div><div class="line">      &#125;</div><div class="line">    ],</div></pre></td></tr></table></figure>
-
+        <p>在使用vue-cli脚手架构建了webpack项目后，发现eslint的验证太tmd的严谨，实在不适合我这种懒癌症人员使用，所以必须要把它给关闭掉。  </p>
+<h4 id="解决办法：进入webpack-base-conf-js里，屏蔽以下代码："><a href="#解决办法：进入webpack-base-conf-js里，屏蔽以下代码：" class="headerlink" title="解决办法：进入webpack.base.conf.js里，屏蔽以下代码："></a>解决办法：进入<code>webpack.base.conf.js</code>里，屏蔽以下代码：</h4><pre><code>preLoaders: [
+  {
+    test: /\.vue$/,
+    loader: &apos;eslint&apos;,
+    include: projectRoot,
+    exclude: /node_modules/
+  },
+  {
+    test: /\.js$/,
+    loader: &apos;eslint&apos;,
+    include: projectRoot,
+    exclude: /node_modules/
+  }
+],
+</code></pre>
       
     </div>
     <div class="article-info article-info-index">
@@ -173,7 +194,7 @@
       
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/webpack-vue-eslint/">webpack,vue,eslint</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/eslint/">eslint</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/">vue</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/webpack/">webpack</a></li></ul>
 	</div>
 
       
@@ -281,7 +302,7 @@
     
     	<section class="tools-section tools-section-tag">
     			<div class="widget tagcloud" id="js-tagcloud">
-    				<a href="/tags/webpack-vue-eslint/" style="font-size: 10px;">webpack,vue,eslint</a> <a href="/tags/后台-java-Spring/" style="font-size: 20px;">后台, java, Spring</a> <a href="/tags/生活/" style="font-size: 10px;">生活</a>
+    				<a href="/tags/Spring/" style="font-size: 10px;">Spring</a> <a href="/tags/eslint/" style="font-size: 10px;">eslint</a> <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/vue/" style="font-size: 10px;">vue</a> <a href="/tags/webpack/" style="font-size: 10px;">webpack</a> <a href="/tags/后台/" style="font-size: 10px;">后台</a> <a href="/tags/后台-java-Spring/" style="font-size: 10px;">后台, java, Spring</a> <a href="/tags/生活/" style="font-size: 10px;">生活</a>
     			</div>
     	</section>
     
